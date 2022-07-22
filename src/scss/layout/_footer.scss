@@ -1,0 +1,89 @@
+@use "../util";
+
+footer {
+	margin-top: 8vw;
+	padding: 8vw;
+	border-top: 2px solid var(--gray-700);
+
+	h1 {
+		margin-bottom: 2.625rem;
+	}
+	h5,
+	p {
+		font-size: 1rem;
+	}
+	h5 {
+		margin-bottom: 0.75rem;
+	}
+	p {
+		margin-bottom: 0.7rem;
+		color: var(--black-800);
+	}
+}
+
+.sign-up {
+	p {
+		margin-bottom: 1rem;
+	}
+}
+
+.footer-navigation nav {
+	p {
+		font-family: var(--ff-Tenor);
+		color: var(--black);
+		cursor: pointer;
+	}
+	@include util.breckpoint-down(lg) {
+		padding-inline: 0;
+		padding-block: 8vw;
+
+		p:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+}
+@include util.breckpoint-up(lg) {
+	.footer-navigation {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+
+		nav {
+			display: flex;
+			padding: 4vw 0;
+			align-items: center;
+
+			p {
+				margin: 0;
+			}
+			p:not(:first-child) {
+				margin-left: 1rem;
+			}
+		}
+		.signature {
+			width: auto;
+
+			p {
+				margin-right: 1rem;
+				margin-left: 0;
+			}
+		}
+	}
+}
+.signature {
+	width: 100%;
+
+	p {
+		padding: 0;
+		margin: 0;
+		margin-left: 1rem;
+
+		@include util.breckpoint-down(mediam) {
+			order: 2;
+		}
+	}
+	img {
+		width: 2.625rem;
+	}
+}

@@ -1,0 +1,19 @@
+@use "../util";
+
+:root {
+	--ff-Tenor: "Tenor Sans", sans-serif;
+	--ff-Noto: "Noto Sans", sans-serif;
+}
+
+h1 {
+	font-size: 3.25rem;
+	font-family: "Tenor Sans", sans-serif;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+p {
+	font-size: 1rem;
+}

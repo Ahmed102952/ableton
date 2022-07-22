@@ -1,0 +1,18 @@
+.header_img {
+	width: calc(100% - (8vw * 2));
+	min-height: calc(100vh - 120px);
+	background-image: url(../../../assests/header.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-inline: auto;
+
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-weight: 700;
+		color: var(--orange-800);
+	}
+}

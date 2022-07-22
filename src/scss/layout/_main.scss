@@ -1,0 +1,39 @@
+@use "../util";
+
+main {
+	h4 {
+		margin-bottom: 1.25rem;
+	}
+	p {
+		font-family: var(--ff-Noto);
+		color: var(--black-800);
+	}
+}
+
+article {
+	padding-block: 2.5rem;
+	line-height: 1.5;
+}
+
+.img-fluied {
+	width: calc(100% - 8vw * 2);
+	margin-inline: auto;
+	margin-block: 8vw;
+}
+
+.youtube {
+	&__poster {
+		position: relative;
+
+		&::after {
+			content: url(../../../assests/play.svg);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	p {
+		margin-top: 0.5rem;
+	}
+}

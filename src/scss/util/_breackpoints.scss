@@ -1,0 +1,25 @@
+// 640px 1000px 1200px 1366px 
+$breckpoints-up: (
+	"small": 40em,
+	"mediam": 62.5em,
+	"lg": 75em,
+	"xxlg": 85.375em
+);
+// 639.98px 999.98px 1199.98px 
+$breckpoints-down: (
+	"small": 39.99875em,
+	"mediam": 62.49875em,
+	"lg": 74.99875em
+);
+
+@mixin breckpoint-up($size) {
+	@media (min-width: map-get($breckpoints-up, $size)) {
+		@content;
+	}
+}
+
+@mixin breckpoint-down($size) {
+	@media (max-width: map-get($breckpoints-down, $size)) {
+		@content;
+	}
+}

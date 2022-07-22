@@ -1,0 +1,11 @@
+.social {
+  width: 200px;
+  padding: 0;
+
+  & > *:not(:first-child) {
+    margin-left: 0.625rem;
+  }
+  li {
+    width: 35px;
+  }
+}

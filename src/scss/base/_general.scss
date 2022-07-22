@@ -1,0 +1,115 @@
+@use "../util";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+
+html {
+	font-size: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 400;
+	line-height: 1;
+}
+
+@include util.breckpoint-up(xxlg) {
+	body {
+		max-width: 85.375em;
+		margin-inline: auto;
+		background-color: var(--white);
+	}
+	html {
+		background-color: var(--gray-700);
+	}
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+.hide-for-lg-screen {
+	@include util.breckpoint-up(mediam) {
+		display: none !important;
+	}
+}
+.hide-for-small-screen {
+	@include util.breckpoint-down(mediam) {
+		display: none !important;
+	}
+}
+
+.container {
+	padding-inline: 8vw;
+
+	@include util.breckpoint-up(mediam) {
+		width: 100%;
+		max-width: 43.75em;
+		padding-inline: 0;
+		margin-inline: auto;
+	}
+}
+
+// width
+
+.w-full {
+	width: 100%;
+}
+
+// display
+
+.flex {
+	display: flex;
+
+	&__wrap {
+		flex-wrap: wrap;
+	}
+}
+
+.j {
+	&__sb {
+		justify-content: space-between;
+	}
+}
+
+.ai {
+	&__c {
+		align-items: center;
+	}
+}
+
+// postion
+
+.relative {
+	position: relative;
+}
+
+.z {
+	&-10 {
+		z-index: 10;
+	}
+
+	&-20 {
+		z-index: 20;
+	}
+}
+
+// shadow
+.sm-shadow {
+	box-shadow: 0 0 10px 0px #efefef;
+}
+
+
+// links
+
+.link {
+	cursor: pointer;
+
+	&::after {
+		content: "\00a0>";
+		font-size: 80%;
+	}
+}
+

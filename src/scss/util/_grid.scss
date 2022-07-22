@@ -1,0 +1,19 @@
+@use "./breackpoints" as util;
+
+.grid {
+  display: grid;
+  row-gap: 2rem;
+}
+
+@include util.breckpoint-down(lg) {
+  .grid-row-1 {
+    grid-row-start: 1;
+  }
+}
+
+@include util.breckpoint-up(lg) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 4vw;
+  }
+}
