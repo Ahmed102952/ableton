@@ -1,5 +1,7 @@
 import { activeMenu } from "./util/activeMenu";
 
+(document.querySelector("[data-header-img]") as HTMLDivElement).style.backgroundImage = `url(https://ik.imagekit.io/b85lgzght1m/tr:w-${document.querySelector("[data-header-img]")?.clientWidth}/ableton/header.jpg)`;
+
 (
 	document.querySelectorAll("[data-poster]") as NodeListOf<HTMLImageElement>
 ).forEach((img, i) => {

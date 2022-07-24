@@ -1,7 +1,6 @@
 .header_img {
 	width: min((100% - (var(--padding) * 2)), 100% - 13.66rem);
 	min-height: calc(100vh - 120px);
-	background-image: url(../../../assests/header.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
