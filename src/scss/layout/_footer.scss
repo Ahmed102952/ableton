@@ -1,8 +1,8 @@
 @use "../util";
 
 footer {
-	margin-top: 8vw;
-	padding: 8vw;
+	margin-top: max(8vw, 6.83rem);
+	padding: var(--padding);
 	border-top: 2px solid var(--gray-700);
 
 	h1 {
@@ -35,7 +35,7 @@ footer {
 	}
 	@include util.breckpoint-down(lg) {
 		padding-inline: 0;
-		padding-block: 8vw;
+		padding-block: var(--padding);
 
 		p:not(:last-child) {
 			margin-bottom: 1rem;
@@ -51,7 +51,7 @@ footer {
 
 		nav {
 			display: flex;
-			padding: 4vw 0;
+			padding: var(--padding) 0;
 			align-items: center;
 
 			p {

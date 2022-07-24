@@ -16,9 +16,9 @@ article {
 }
 
 .img-fluied {
-	width: calc(100% - 8vw * 2);
+	width: min((100% - (var(--padding) * 2)), 100% - 13.66rem);
 	margin-inline: auto;
-	margin-block: 8vw;
+	margin-block: min(8vw, 6.83rem);
 }
 
 .youtube {

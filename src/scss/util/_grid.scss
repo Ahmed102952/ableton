@@ -14,6 +14,6 @@
 @include util.breckpoint-up(lg) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 4rem 4vw;
+    gap: 4rem min(4vw, 3.415rem);
   }
 }

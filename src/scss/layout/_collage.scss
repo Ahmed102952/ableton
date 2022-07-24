@@ -1,13 +1,16 @@
 
 .collage {
+	--space: min(8vw, 6.83rem);
+
 	width: 100%;
-	height: 60vw;
+	height: min(60vw, 51.225rem);
 	position: relative;
 	margin-block: 8vw;
+
 	&::before {
 		content: "";
-		width: 60vw;
-		height: 60vw;
+		width: min(60vw, 51.225rem);
+		height: min(60vw, 51.225rem);
 		position: absolute;
 		top: 0;
 	}
@@ -17,26 +20,22 @@
 		background-position: center;
 		background-size: cover;
 	}
-	.collage__img {
-		--space: 8vw;
-	}
 }
 
 .collage-1 {
 	.collage__img-1 {
-		width: 42vw;
-		height: 42vw;
+		width: min(42vw, 35.8575rem);
+		height: min(42vw, 35.8575rem);
 		left: var(--space);
 		top: 50%;
 		transform: translateY(-50%);
 	}
 	.collage__img-2 {
-		width: 33vw;
-		height: 25vw;
+		width: min(33vw, 28.17375rem);
+		height: min(25vw, 21.34375rem);
 		right: var(--space);
 		top: 50%;
 		transform: translateY(-50%);
-		background-image: url(../../../assests/photo-2.jpg);
 	}
 	&::before {
 		right: 0;
@@ -50,7 +49,7 @@
 		flex-direction: column;
 		justify-content: space-evenly;
 		position: absolute;
-		left: 8vw;
+		left: var(--space);
 		top: 0;
 		bottom: 0;
 
@@ -61,20 +60,19 @@
 		}
 	}
 	.collage__img-1 {
-		width: 33vw;
-		height: 25vw;
-		background-image: url(../../../assests/photo-3.jpg);
+		width: min(33vw, 28.17375rem);
+		height: min(25vw, 21.34375rem);
 	}
 
 	.collage__img-2 {
-		width: 33vw;
-		height: 25vw;
-		background-image: url(../../../assests/photo-4.jpg);
+		width: min(33vw, 28.17375rem);
+		height: min(25vw, 21.34375rem);
 	}
   .collage__img-3 {
     width: 42vw;
+		max-width: 35.8575rem;
     height: 42vw;
-    background-image: url(../../../assests/photo-5.jpg);
+		max-height: 35.8575rem;
     right: var(--space);
     top: 50%;
     transform: translateY(-50%);
@@ -87,20 +85,18 @@
 
 .collage-3 {
   .collage__img-1 {
-    width: 33vw;
-    height: 25vw;
+    width: min(33vw, 28.17375rem);
+    height: min(25vw, 21.34375rem);
     left: var(--space);
     top: 50%;
     transform: translateY(-50%);
-    background-image: url(../../../assests/photo-6-a.jpg);
   }
   .collage__img-2 {
-    width: 42vw;
-    height: 42vw;
+    width: min(42vw, 35.8575rem);
+    height: min(42vw, 35.8575rem);
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url(../../../assests/photo-7.jpg);
   }
   &::before {
     left: 50%;
