@@ -111,3 +111,16 @@ a {
 		font-size: 80%;
 	}
 }
+
+
+// selected
+
+::selection {
+	background-color: var(--blue-800);
+	color: var(--white);
+}
+
+img,
+button {
+	user-select: none;
+}

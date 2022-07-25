@@ -16,7 +16,7 @@ article {
 }
 
 .img-fluied {
-	width: min((100% - (var(--padding) * 2)), 100% - 13.66rem);
+	width: max((100% - (var(--padding) * 2)), 100% - 13.66rem);
 	margin-inline: auto;
 	margin-block: min(8vw, 6.83rem);
 }
@@ -24,7 +24,7 @@ article {
 .youtube {
 	&__poster {
 		position: relative;
-
+		cursor: pointer;
 		&::after {
 			content: url(../../../assests/play.svg);
 			position: absolute;

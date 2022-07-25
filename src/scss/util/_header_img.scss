@@ -1,5 +1,5 @@
 .header_img {
-	width: min((100% - (var(--padding) * 2)), 100% - 13.66rem);
+	width: max((100% - (8vw	 * 2)), 100% - 13.66rem);
 	min-height: calc(100vh - 120px);
 	background-size: cover;
 	background-position: center;

@@ -3,7 +3,7 @@
 .card {
 	display: grid;
 	background-color: var(--sky);
-	width: min((100% - (var(--padding) * 2)), 100% - 13.66rem);
+	width: max((100% - (var(--padding) * 2)), 100% - 13.66rem);
 	margin-inline: auto;
 	line-height: 1.5;
 	margin-top: min(8vw, 6.83rem);

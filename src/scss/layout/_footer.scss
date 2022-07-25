@@ -3,6 +3,7 @@
 footer {
 	margin-top: max(8vw, 6.83rem);
 	padding: var(--padding);
+	padding-bottom: 4rem;
 	border-top: 2px solid var(--gray-700);
 
 	h1 {
@@ -35,7 +36,8 @@ footer {
 	}
 	@include util.breckpoint-down(lg) {
 		padding-inline: 0;
-		padding-block: var(--padding);
+		padding-block: calc(var(--padding) / 2);
+		padding-bottom: 0;
 
 		p:not(:last-child) {
 			margin-bottom: 1rem;
@@ -51,7 +53,7 @@ footer {
 
 		nav {
 			display: flex;
-			padding: var(--padding) 0;
+			padding: calc(var(--padding) / 2) 0;
 			align-items: center;
 
 			p {
@@ -79,7 +81,7 @@ footer {
 		margin: 0;
 		margin-left: 1rem;
 
-		@include util.breckpoint-down(mediam) {
+		@include util.breckpoint-down(lg) {
 			order: 2;
 		}
 	}
