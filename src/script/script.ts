@@ -17,9 +17,9 @@ window.addEventListener("DOMContentLoaded", () => {
 			i + 1
 		}.jpg`;
 		img.srcset = `
-		https://ik.imagekit.io/b85lgzght1m/tr:w-500/ableton/poster-${i + 1}.jpg 500, 
-		https://ik.imagekit.io/b85lgzght1m/tr:w-1000/ableton/poster-${i + 1}.jpg 1000
-		https://ik.imagekit.io/b85lgzght1m/tr:w-1366/ableton/poster-${i + 1}.jpg 1366`;
+		https://ik.imagekit.io/b85lgzght1m/tr:w-500/ableton/poster-${i + 1}.jpg 500w, 
+		https://ik.imagekit.io/b85lgzght1m/tr:w-1000/ableton/poster-${i + 1}.jpg 1000w
+		https://ik.imagekit.io/b85lgzght1m/tr:w-1366/ableton/poster-${i + 1}.jpg 1366w`;
 	});
 
 	(
