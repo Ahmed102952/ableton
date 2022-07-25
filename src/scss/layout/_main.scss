@@ -17,6 +17,7 @@ article {
 
 .img-fluied {
 	width: max((100% - (var(--padding) * 2)), 100% - 13.66rem);
+	height: auto;
 	margin-inline: auto;
 	margin-block: min(8vw, 6.83rem);
 }
