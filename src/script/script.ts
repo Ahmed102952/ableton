@@ -1,5 +1,7 @@
 import { activeMenu } from "./util/activeMenu";
 
+// requesting images
+
 window.addEventListener("DOMContentLoaded", () => {
 	(
 		document.querySelector("[data-header-img]") as HTMLDivElement
@@ -35,6 +37,8 @@ window.addEventListener("DOMContentLoaded", () => {
 		}/ableton/photo-${i + 1}.jpg)`;
 	});
 
+	// btns click events
+
 	document.querySelector("[data-menu-btn]")?.addEventListener("click", () => {
 		activeMenu(
 			document.querySelector("[data-menu-btn]") as Element,
@@ -48,4 +52,25 @@ window.addEventListener("DOMContentLoaded", () => {
 			document.querySelector("[data-desktop-menu]") as Element
 		);
 	});
+
+
+
+	// scroll effect
+	
+	let lastScroll = 0;
+	
+	window.addEventListener("scroll", () => {
+		const currentScroll = window.scrollY
+		const header = document.querySelector("header")
+		if(lastScroll > currentScroll) {
+			header?.classList.add("sticky")
+		} else {
+			header?.classList.remove("sticky")
+		}
+
+		lastScroll = currentScroll
+	})
+
+
 });
+

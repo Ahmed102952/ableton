@@ -26,6 +26,7 @@ nav {
 
 .secound-nav {
 	text-transform: capitalize;
+	background-color: hsla(0, 0%, 100%, 0.5);
 	p {
 		font-size: 1rem;
 		cursor: pointer;
@@ -38,10 +39,19 @@ nav {
 		color: var(--orange-500);
 	}
 }
+header {
+	position: sticky;
+	top: -100%;
+	transition: 0.5s;
+}
+header.sticky {
+	top: -4rem;
+	z-index: 45;
+}
 
 .mobile-menu {
 	position: absolute;
-	top: -500%;
+	top: -1500%;
 	left: 0;
 	width: 100%;
 	padding-top: 5rem;
