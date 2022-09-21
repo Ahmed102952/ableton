@@ -5,4 +5,4 @@
 
 the page in responsive on all devices
 
-Live preview: https://ableton-about-page.am0.tech
+[Live preview](https://ableton-about-page.am0.tech)
